@@ -1,15 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zero to Mastery Practice</title>
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=Vinay.design">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/2961ac5827.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <title>Agency - Build Your Dream Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <!-- script -->
-     <script src="script.js"></script>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg agency-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span class="agency-logo me-2">
+          <img src="assets/img/logo.png" alt="logo" />
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        </ul>
+        <a href="#" class="btn btn-outline-light ms-lg-4 agency-contact-btn">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="agency-hero">
+    <div class="container">
+      <div class="row align-items-center gy-5 gy-lg-0">
+        <div class="col-lg-6">
+          <span class="badge agency-badge mb-3">MODERN STUDIO</span>
+          <h1 class="agency-hero-title mb-3">
+            We're Help<br />To Build Your<br />Dream Project
+          </h1>
+          <p class="agency-hero-desc mb-4">
+            Agency provides a full service range including technical skills, design, business understanding.
+          </p>
+          <div class="d-flex gap-3 mb-4">
+            <a href="#" class="btn agency-btn-primary">How We Work</a>
+            <a href="#" class="btn agency-btn-secondary">Contact Us</a>
+          </div>
+          <div class="d-flex align-items-center mt-4">
+            <span class="agency-hero-status-icon me-2"></span>
+            <span class="agency-hero-status-text">The leader in the market & trusted by 150+ brands</span>
+          </div>
+        </div>
+        <div class="col-lg-6 position-relative">
+          <div class="agency-hero-graphic">
+            <img src="assets/img/laptop.png" alt="Laptop" class="img-fluid agency-hero-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands Section -->
+  <section class="agency-brands">
+    <div class="container py-4">
+      <div class="row justify-content-center align-items-center g-4">
+        <div class="col-6 col-md-12 text-center">
+          <img src="assets/img/brands-logo.png" class="img-fluid agency-brand-logo" alt="Digitalive" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section py-5">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 position-relative">
+          <div class="about-image-wrapper position-relative">
+            <img src="assets/img/about.png" alt="Desk setup" class="img-fluid rounded office-image" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span class="badge about-badge">ABOUT</span>
+          <h2 class="about-title">An Experience Design Agency</h2>
+          <p class="about-description">
+            Provides a full service range<br />
+            Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.
+          </p>
+          <button class="btn about-button">About Us</button>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="row text-center mb-5 stats-section">
+        <div class="col-md-4">
+          <div class="stats-card">
+            <h2 class="stats-value">42%</h2>
+            <p class="stats-label">Years of experience</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stats-card">
+            <h2 class="stats-value">73+</h2>
+            <p class="stats-label">Agency members</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stats-card">
+            <h2 class="stats-value">5.000</h2>
+            <p class="stats-label">Projects complete</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- How We Work Section -->
+      <div class="row align-items-center how-we-work-section">
+        <div class="col-lg-6">
+          <span class="badge how-we-work-badge">HOW WE WORK</span>
+          <h3 class="how-we-work-title">Making Your Projects Look Awesome</h3>
+          <p class="how-we-work-description">
+            Technical skills, design, business understanding, ability to put themselves in the merchant's shoes.
+          </p>
+          <a href="#" class="how-we-work-link">Read More</a>
+        </div>
+        <div class="col-lg-6">
+          <ul class="list-unstyled how-we-work-list">
+            <li class="d-flex align-items-start mb-3">
+              <h1 class="list-number">1</h1>
+              <p class="list-description">Full service range including</p>
+            </li>
+            <li class="d-flex align-items-start mb-3">
+              <h1 class="list-number">2</h1>
+              <p class="list-description">Technical skills, design, business</p>
+            </li>
+            <li class="d-flex align-items-start mb-3">
+              <h1 class="list-number">3</h1>
+              <p class="list-description">Themselves in the merchant's</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="agency-video">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <div class="agency-video-wrapper position-relative">
+            <img src="assets/img/video.png" class="img-fluid agency-video-thumbnail" alt="Video Thumbnail" />
+            <a href="#" class="agency-video-play">
+              <span class="agency-video-play-icon"></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span class="badge agency-badge mb-2">VIDEO REEL</span>
+          <h3 class="agency-video-title">Unlock The Greatest Value Possible</h3>
+          <p class="agency-video-desc">
+            Design business understanding, ability to put themselves in the merchant’s shoes. It is meant to partner on the long run.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="portfolio-badge">PORTFOLIO</span>
+        <h2 class="portfolio-title">Latest Work</h2>
+        <div class="portfolio-filters mt-3">
+          <a href="#" class="portfolio-filter active">Show All</a>
+          <a href="#" class="portfolio-filter">Design</a>
+          <a href="#" class="portfolio-filter">Branding</a>
+          <a href="#" class="portfolio-filter">Illustration</a>
+          <a href="#" class="portfolio-filter">Motion</a>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="portfolio-card position-relative">
+            <img src="assets/img/sofa.jpg" alt="SOFA" class="img-fluid portfolio-image">
+            <span class="portfolio-badge-card">Design</span>
+            <h5 class="portfolio-card-title">SOFA</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="portfolio-card position-relative">
+            <img src="assets/img/keyboard.jpg" alt="KeyBoard" class="img-fluid portfolio-image">
+            <span class="portfolio-badge-card">Branding</span>
+            <h5 class="portfolio-card-title">KeyBoard</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="portfolio-card position-relative">
+            <img src="assets/img/work media.jpg" alt="Work Media" class="img-fluid portfolio-image">
+            <span class="portfolio-badge-card">Illustration</span>
+            <h5 class="portfolio-card-title">Work Media</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="portfolio-card position-relative">
+            <img src="assets/img/dddone.jpg" alt="DDDone" class="img-fluid portfolio-image">
+            <span class="portfolio-badge-card">Motion</span>
+            <h5 class="portfolio-card-title">DDDone</h5>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <button class="btn explore-more-button">Explore More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="agency-cta">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <span class="agency-cta-badge">NEW</span>
+          <h3 class="agency-cta-title">We Help Companies Move Faster</h3>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="#" class="btn agency-btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="agency-team">
+    <div class="container">
+      <h2 class="agency-section-title text-center mb-4">
+        Team of Designers and Developers
+      </h2>
+      <div class="agency-team-slider">
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="agency-team-card">
+              <img src="assets/img/client1.png" class="img-fluid rounded-circle agency-team-img" alt="Azah Arywel" />
+              <div class="agency-team-info">
+                <h6 class="agency-team-name">Azah Arywel</h6>
+                <span class="agency-team-role">Project Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="agency-team-card">
+              <img src="assets/img/client2.png" class="img-fluid rounded-circle agency-team-img" alt="Renolf Baksameenko" />
+              <div class="agency-team-info">
+                <h6 class="agency-team-name">Renolf Baksameenko</h6>
+                <span class="agency-team-role">UI Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="agency-team-card">
+              <img src="assets/img/client3.png" class="img-fluid rounded-circle agency-team-img" alt="Leonardo Oliveira" />
+              <div class="agency-team-info">
+                <h6 class="agency-team-name">Leonardo Oliveira</h6>
+                <span class="agency-team-role">Frontend Developer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="agency-team-card">
+              <img src="assets/img/client4.png" class="img-fluid rounded-circle agency-team-img" alt="Isabella Tsialkova" />
+              <div class="agency-team-info">
+                <h6 class="agency-team-name">Isabella Tsialkova</h6>
+                <span class="agency-team-role">Product Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="agency-team-controls d-flex justify-content-center mt-3">
+          <span class="agency-team-dot active"></span>
+          <span class="agency-team-dot"></span>
+          <span class="agency-team-dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="pricing-badge">PRICING</span>
+        <h2 class="pricing-title">Check Our Pricing Plans</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <h6 class="pricing-card-type">CONSULTATION</h6>
+            <h3 class="pricing-card-price">Free</h3>
+            <p class="pricing-card-desc">
+              Your digital marketing efforts, instead of handling in-house.
+            </p>
+            <ul class="pricing-card-features">
+              <li>Brand Design</li>
+              <li>Market Analysis</li>
+              <li>Production</li>
+            </ul>
+            <button class="btn pricing-card-button">Contact Us</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pricing-card featured position-relative">
+            <span class="pricing-card-badge">Popular</span>
+            <h6 class="pricing-card-type">DESIGN</h6>
+            <h3 class="pricing-card-price">$1500</h3>
+            <p class="pricing-card-desc">
+              Provide your business with a variety of digital solutions to promote.
+            </p>
+            <ul class="pricing-card-features">
+              <li>Brand Design</li>
+              <li>Market Analysis</li>
+              <li>Production</li>
+            </ul>
+            <button class="btn pricing-card-button">Contact Us</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <h6 class="pricing-card-type">DESIGN + CODE</h6>
+            <h3 class="pricing-card-price">$2900</h3>
+            <p class="pricing-card-desc">
+              Help you hit your marketing goals and grow your business.
+            </p>
+            <ul class="pricing-card-features">
+              <li>Brand Design</li>
+              <li>Market Analysis</li>
+              <li>Production</li>
+            </ul>
+            <button class="btn pricing-card-button">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <span class="faq-badge">FAQ</span>
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+          <p class="faq-desc">
+            A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.
+          </p>
+          <a href="#" class="faq-link">Contact Us</a>
+        </div>
+        <div class="col-md-6">
+          <div class="accordion faq-accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  A digital agency is a business
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Hire to outsource your digital
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  This allows you to focus on your core business while experts handle your digital marketing needs.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Marketing efforts
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Marketing campaigns, social media management, and more to help grow your business.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Can provide your business
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Digital solutions tailored to fit your business needs and goals.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <div class="col-12 position-relative">
+          <img src="assets/img/map.png" alt="Map Background" class="img-fluid w-100 contact-map">
+          <div class="contact-form-wrapper position-absolute">
+            <div class="contact-form">
+              <h3 class="contact-title">Get In Touch</h3>
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control contact-input" placeholder="Your email">
+                </div>
+                <div class="mb-3">
+                  <select class="form-select contact-input">
+                    <option selected disabled>Subject</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Support">Support</option>
+                    <option value="Feedback">Feedback</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control contact-input" rows="4" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn contact-submit-button">Submit Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="footer-logo">Agency</h4>
+        </div>
+        <div class="col-md-4">
+          <ul class="footer-menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="footer-services">
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">See More</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom mt-4 text-center">
+        <p class="footer-copyright">&copy; 2022 Laaqiq, All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
